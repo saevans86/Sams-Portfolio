@@ -1,9 +1,13 @@
-    
+    * {
+      padding: 5px;
+    }
+
     body {
     font-family : 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin : 1px;
     padding : 10px;
     background-color : #ffffff;
+    font:16px;
     }
     header {
     padding : 10px;
@@ -13,13 +17,13 @@
     background-image : url("../assets/images/banner-image.png");
     background-size : cover;
     background-position : center;
-    width : auto%;
+    width : auto;
     }
     nav {
     display : flex;
     background-color : #ffffff;
     list-style : none;
-    border: #949494 solid;
+    border: #000000 1px solid;
     text-align: center;
     }
     nav a {
@@ -32,14 +36,14 @@
     main {
     display : flex;
     flex-wrap : wrap;
-    border: #949494 solid;
+    border: #000000 1px solid;
     }
     aside {
     flex : 1;
-    padding : inherit;
+    padding : 5px;
     width : 100%;
     height : auto;
-    border: #949494 solid;
+    border: #000000 1px solid;
     }
     img {
     background-size : contain;
@@ -52,31 +56,37 @@
     block-size : 100%;  
     display : flex;
     flex-wrap : wrap;
-    padding : 5px;
+    
     justify-content : flex-end;  
     }
-    
-   
     .image2 {
       max-width: 100%;
       height: auto;
       left: 0px;
       right: 0px;
-      border: #949494 solid;
+      border: #000000 1px solid;
      
-      }
+      } 
     .image3  {
       max-width: 100%;
       height: auto;
       left: 0px;
-      right: 0px;
+      right: 0px; 
+      border: #000000 1px solid;
+      } 
+      .image4  {
+        max-width: 100%;
+        height: auto;
+        left: 0px;
+        right: 0px; 
+        border: #000000 1px solid;
+        } 
     
-    }
     section  {
     padding: 5px;
     flex : 2;
     background-color : #fff;
-    border: #949494 solid;
+    border: #000000 1px solid;
     text-align: center;
   
     }
@@ -87,11 +97,16 @@
     background-size : cover;
     background-position : center;
     width : 100%;
+    height: 100%
+    padding 5px;
+    
     }
     @media screen and (max-width: 800px) {
-    main, nav, div, footer {
+    main, nav, div, footer, #project {
     flex-direction : column;
-    gap : 10px;
+    margin: 1px;
+    padding: 5px;
+    
     }
     aside {
     order : 0;

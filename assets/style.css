@@ -1,44 +1,45 @@
-body {
-    text-align : center;
-    padding: 5px;
-    margin: 5px
-    }
+    
     body {
     font-family : 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin : 0;
-    padding : 0;
+    margin : 1px;
+    padding : 10px;
     background-color : #ffffff;
     }
     header {
-    padding : 20px;
+    padding : 10px;
+    
     text-align : center;
     color : #000000;
     background-image : url("../assets/images/banner-image.png");
     background-size : cover;
     background-position : center;
-    width : 100%;
+    width : auto%;
     }
     nav {
     display : flex;
     background-color : #ffffff;
     list-style : none;
+    border: #949494 solid;
+    text-align: center;
     }
     nav a {
     text-decoration : none;
     margin: 10px;
-    padding: auto;
+    padding: 5px;
+    
     
     }
     main {
     display : flex;
     flex-wrap : wrap;
+    border: #949494 solid;
     }
     aside {
     flex : 1;
     padding : inherit;
-    border : #949494 double thick;
     width : 100%;
     height : auto;
+    border: #949494 solid;
     }
     img {
     background-size : contain;
@@ -48,38 +49,38 @@ body {
     width : auto;
     }
     #project {
-    block-size : 100%;
-    border : #949494 double thick;
+    block-size : 100%;  
     display : flex;
     flex-wrap : wrap;
     padding : 5px;
     justify-content : flex-end;  
     }
-    .container {
-    border : #949494 double thick;
-    }
-  
-    .image2{
+    
+   
+    .image2 {
       max-width: 100%;
       height: auto;
       left: 0px;
       right: 0px;
-    }
-    .image3 {
+      border: #949494 solid;
+     
+      }
+    .image3  {
       max-width: 100%;
       height: auto;
       left: 0px;
       right: 0px;
-  
+    
     }
-    section {
+    section  {
+    padding: 5px;
     flex : 2;
     background-color : #fff;
-    border : #949494 double thick;
+    border: #949494 solid;
+    text-align: center;
   
     }
     footer {
-    padding : 20px;
     text-align : center;
     background-image : url("../assets/images/banner-image.png");
     color : #000000;
@@ -95,3 +96,5 @@ body {
     aside {
     order : 0;
     }
+  }
+  

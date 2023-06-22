@@ -37,13 +37,15 @@ aside {
 	height : 100%;
 	border: #000000 1px solid;
 }
-img {
+.image1 {
 	background-size : contain;
 	background-repeat : no-repeat;
 	block-size : auto;
 	height : 200px;
 	width : auto;
-  box-shadow: 12px 12px 2px 1px rgba(131, 110, 110, 0.2);
+	box-shadow: 12px 12px 2px 1px rgba(131, 110, 110, 0.2);
+	
+    
 }
 #project {
 	block-size : 100%;

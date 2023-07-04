@@ -14,7 +14,7 @@ N/A
 
 Usage:
 All links should go to the correct place 
-https://saevans86.github.io/assignment-02/
+[https://saevans86.github.io/assignment-02/](https://saevans86.github.io/Sams-Portfolio/)
 
 ![screenshot2](https://github.com/saevans86/assignment-02/assets/130856120/eeeb33f9-7f93-4444-b4a1-cd087b96e9ae)
 

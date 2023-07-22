@@ -2,9 +2,11 @@
 <html>
 
 <head>
-<title>Sam Evans portfolio</title>
+
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Sam Evans portfolio</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 <link rel="stylesheet" href="./assets/style.css">
 </head>
 
@@ -13,17 +15,64 @@
 <h1>Samuel Evans Portfolio</h1>
 <h4>Developer in the making!</h4>
 </header>
-<nav>
-    <li><a href="https://github.com/saevans86">Github</a></li>
-    <li><a href="https://www.linkedin.com/in/samuel-evans-98a2abb7/">LinkedIn</a></li>
-    <li><a href="#about-me"> About Me</a> </a></li>
-    <li><a href="#Contact-me">Contact me</a></li>
-    <li><a href="#projects"> Projects</a> </a></li>
-    </nav>
-<main>
+
+
+    <div class="card">
+        <!-- <img src="..." class="card-img-top" alt="..."> -->
+      
+        <div class="card-body">
+          <h5 class="card-title">About me</h5>
+          <p class="card-text"><p>Hi, I am Sam, Salt Lake City resident animal, coding, video game and music lover</p>
+          <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Check out my links!</button>
+
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+   <li><a href="https://github.com/saevans86">Github</a></li>
+   <li><a href="https://www.linkedin.com/in/samuel-evans-98a2abb7/">LinkedIn</a></li>
+   <li><a href="#about-me"> About Me</a> </a></li>
+   <li><a href="#Contact-me">Contact me</a></li>
+   <li><a href="#projects"> Projects</a> </a></li>
+  </div>
+</div>
+
+
+
+
+        </div>
+      </div>
+      
+      <div class="card" aria-hidden="true">
+        <img src="./assets/images/selfie.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title placeholder-glow">
+            <span class="placeholder col-6"></span>
+          </h5>
+          <p class="card-text placeholder-glow">
+            <p>
+                I have been working in the medical field in different areas for a little over 13 years.
+                I have always been interesting developing and coding since I started gaming as
+                kid, always being intruiged with what is happening behind the scenes and I really feel like it's time for a change in pace!
+                </p>
+                <p>Since starting The U of U's coding bootcamp, I've realized my brain enjoys the
+                challenge of the analytical aspect of coding, which keeps me engaged. I like to set blocks of
+                time aside to make sure I can be fully present with anything I'm currentnly working on.
+                </p>
+                <p>
+                I'm exciting to see more of what I can accomplish while working through the projects and assignments.
+                </p>
+          </p>
+          
+        </div>
+      </div>
+
+
 <section>
 <!-- list of the projects I've done so far -->
-<h2 id="projects">Projects</h2>
+<div class="container-fluid"> Projects 
 <div>
     <h4> Password Gnerator </h4>
 <p>
@@ -43,30 +92,41 @@ code while keeping the general appearance and functionality of the page the same
 <p>In our second week assignment we were asked to complete a portfolio that has working links, a recent picture and an about me section</p>
 <a href="https://saevans86.github.io/Sams-Portfolio/"><img src="assets\images\screenshot2.png" class="image4" alt="screenshot of my 2nd assignemnt to build a web site portfolio"/></a>
 </div>
+</div>
 <div>
-    <!--section with about me and pic-->
-    
-    <h2 id="about-me">About Me</h2>
-    <p>Hi, I am Sam, Salt Lake City goof-ball - I love live music and animals 🦝</p>
-    <img src="./assets/images/selfie.jpg" class="image1" alt="picture of me hiking in Utah's Mountans">
-    <p>
-    I have been working in the medical field in different areas for a little over 13 years.
-    I have always been interesting developing and coding since I started gaming as
-    kid, always being intruiged with what is happening behind the scenes and I really feel like it's time for a change in pace!
-    </p>
-    <p>Since starting The U of U's coding bootcamp, I've realized my brain enjoys the
-    challenge of the analytical aspect of coding, which keeps me engaged. I like to set blocks of
-    time aside to make sure I can be fully present with anything I'm currentnly working on.
-    </p>
-    <p>
-    I'm exciting to see more of what I can accomplish while working through the projects and assignments.
-    </p>
-    </div>
+
+ 
 </section>
 <footer>
 <div id="Contact-me"></div>
-<h2> Contact me 801-931-1430 sam_evans1986@hotmail.com </h2>
+<div class="row">
+    <h2> Contact me</h2>
+    <div class="col">
+        <form class="row gy-2 gx-3 align-items-center">
+            <div class="col-auto">
+              <label class="visually-hidden" for="autoSizingInput">Name</label>
+              <input type="text" class="form-control" id="autoSizingInput" placeholder="Tell me who you are!">
+            </div>
+            <div class="col-auto">
+              <label class="visually-hidden" for="autoSizingInputGroup">E-mail</label>
+              <div class="input-group">
+                <div class="input-group-text">e-mail</div>
+                <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Send me an e-mail!">
+              </div>
+            </div>
+            
+            </div>
+           
+            </div>
+            <div class="col-auto">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </form>
+    </div>
+  </div>
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
